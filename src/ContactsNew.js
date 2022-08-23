@@ -1,22 +1,30 @@
-import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
-
-
-const handleAddContact = () => {
-  return (
-  <Router>
-    <div>
-      <Link to="/contacts/new">Form</Link>
-    </div>
-
-    <Switch>
-      <Route path="/contacts/new">
-        {/* <Form/> */}
-      </Route> 
-    </Switch>
-  </Router> 
-  )
-}
+const HandleAddContact = () => (
+  <div>
+    <h1>Add Contact</h1>
+    <form>
+      <input type="text" placeholder="Name" />
+      <input type="text" placeholder="Phone" />
+      <input type="text" placeholder="Email" />
+      <input type="text" placeholder="Address" />
+    </form>
+  </div>
+);
+  
 
 
 
-export default handleAddContact
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export default HandleAddContact;
