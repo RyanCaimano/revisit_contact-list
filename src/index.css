@@ -18,6 +18,9 @@ h1 {
   margin-bottom: 2%;
 }
 
-tr {
-  padding: 2%;
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: center;
 }
