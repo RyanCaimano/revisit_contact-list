@@ -24,3 +24,24 @@ img {
   border-radius: 50%;
   display: center;
 }
+
+thead {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+tr {
+  text-align: center;
+}
+
+td.column2 {
+  padding-top: 10%;
+}
+
+td.column3 {
+  padding-top: 10%;
+}
+
+td.column4 {
+  padding-top: 10%;
+}
