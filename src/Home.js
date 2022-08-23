@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import { useState } from "react";
 import MapData from "./MapData";
 import ContactNew from "./ContactNew";
@@ -37,12 +38,18 @@ const Home = () => {
     }
   ])
 
-  
+  const addContact = (contact) => {
+    setContacts(contacts => {
+    return [...contacts, contact];
+  })
+    }
+    
 
   return (
     <div>
-      {/* <ContactNew /> */}
+      <button className="buttonAdd"> <Link to="/contact/new">Add Contact</Link></button>
       <MapData />
+      <ContactNew />
     </div>
   );
 }

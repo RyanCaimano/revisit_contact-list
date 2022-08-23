@@ -1,4 +1,4 @@
-import {Route, Link} from 'react-router-dom';
+import {BrowserRouter, Route, Link} from 'react-router-dom';
 import React, { useState } from 'react';
 import Home from './Home';
 
@@ -44,11 +44,12 @@ const ContactNew = (props) => {
           <input type="text" className="form-control" value={phone_number} onChange={event => setPhone_number(event.target.value)
           } />
 
-          <button type="button" className="addButton" onClick={handleAddContact}>Back</button>
+          <button type="button" className="addButton" onClick={handleAddContact}>Submit</button>
           
-          <Link to="/contacts">Back</Link>
+          <BrowserRouter>
+          {/* <Link to="/contacts/" className="addButton">Add Contact</Link> */}
           <Route path="/contacts" render={() => <Home />} />
-          
+          </BrowserRouter>
 
         </div>          
       </form>
