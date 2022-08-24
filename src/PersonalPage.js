@@ -1,19 +1,17 @@
-// import contact from './data';
+import _ from 'lodash';
 
 
-// const PersonalPage = () => {
-//   return (
+const PersonalPage = ({contactId, contacts}) =>  {
+  const contact = _.find(contacts, {id: contactId});
 
-//     <div className="personal-page">
-//       <tr key={contact.id}>
-//         <h1><td key={`${contact.image_url}`}>
-//           <img src={`${contact.image_url}`} alt="friend's portrait"/>
-//             </td>
-//         </h1>
-//       </tr>
-//     </div>
+  return (
+    <div>
+      <h1>{contact.image_url}</h1>
+      <p>{contact.name}</p>
+      <p>{contact.phone}</p>
+      <p>{contact.email}</p>
+    </div>
+  );
+}
 
-//   )
-//   }
-
-//   export default PersonalPage;
+export default PersonalPage;

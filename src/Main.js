@@ -1,14 +1,14 @@
 import { Switch, Route} from 'react-router-dom';
 import Home from './Home';
 import Form from './Form';
-// import PersonalPage from './PersonalPage';
+import PersonalPage from './PersonalPage';
 
 const Main = () => (
   <main>
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/contacts/new" component={Form} />
-      {/* <Route path="/contacts/{contact.id}" component={PersonalPage} /> */}
+      <Route path="/contacts/:{contact.id}" component={PersonalPage} />
     </Switch>
   </main>
 );
