@@ -20,6 +20,15 @@ const data =
     },
 
     {
+      "id": 61524854,
+      "alias": "Cantstanja",
+      "name": "George Costanza",
+      "image_url": "https://www.cheatsheet.com/wp-content/uploads/2020/08/George-Costanza-scaled.jpg",
+      "email": "marine_biologist@example.com",
+      "phone_number": "15555555555"
+    },
+
+    {
       "id": 85907747,
       "alias": "Phineas",
       "name": "Richard Feynman",
