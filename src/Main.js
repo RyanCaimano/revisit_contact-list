@@ -1,12 +1,12 @@
 import { Switch, Route} from 'react-router-dom';
 import Home from './Home';
-import ContactsNew from './ContactsNew';
+import Form from './Form';
 
 const Main = () => (
   <main>
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/contacts/new" component={ContactsNew} />
+      <Route path="/contacts/new" component={Form} />
     </Switch>
   </main>
 );
