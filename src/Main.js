@@ -6,9 +6,12 @@ import PersonalPage from './PersonalPage';
 const Main = () => (
   <main>
     <Switch>
+
       <Route exact path="/" component={Home} />
-      <Route path="/contacts/new" component={Form} />
-      <Route path="/contacts/:contactId" component={PersonalPage} />
+      <Route exact path ="/contacts" render={Home} />
+      <Route exact path="/contacts/new" component={Form} />
+      <Route path="/contacts/:contactId" component=          {PersonalPage} />
+
     </Switch>
   </main>
 );

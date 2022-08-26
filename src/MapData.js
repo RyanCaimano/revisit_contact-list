@@ -2,7 +2,9 @@ import {Link} from 'react-router-dom';
 import data from './data';
 import React from 'react';
 
+
 const MapData = (contact) => {
+  
   return (
     <div>
       <h1>Contact List</h1>
