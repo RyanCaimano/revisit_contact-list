@@ -7,18 +7,23 @@ import useContactState from './UseContactState';
 const Main = () => {
   const { contacts, AddContact } = useContactState();
   
+  
   return (
   <main>
     <Switch>
 
-      <Route exact path="/" component= {() => 
+      <Route exact path="/" render= {() => 
         <Home contacts={contacts} />    
       } />
-      <Route exact path ="/contacts" render={Home} />
+      <Route exact path ="/contacts" render= {() => 
+        <Home contacts={contacts} />
+      } />
       <Route exact path="/contacts/new" component={ () =>
         <Form AddContact={AddContact} />
       } />
-      <Route path="/contacts/:contactId" component=          {PersonalPage} />
+      <Route path="/contacts/:contactId" render= { (routerProps) =>
+      <PersonalPage contactId={parseInt(routerProps.match.params.contactId)} contacts={contacts} /> 
+      } />
 
     </Switch>
   </main>

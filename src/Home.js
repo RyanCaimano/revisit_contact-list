@@ -3,10 +3,11 @@ import MapData from "./MapData";
 import "./index.css";
 import HandleAddContact from "./HandleAddContact";
 
-const Home = () => {
+const Home = ({contacts}) => {
+  
   return (
     <div>
-      <MapData />
+      <MapData contacts={contacts}/>
       <button className="btn btn-primary" onClick={HandleAddContact}>Add Contact</button> 
     </div>
   )
