@@ -2,6 +2,9 @@ import _ from 'lodash';
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+
+
+
 const PersonalPage = ({contactId, contacts}) => {
   const contact = _.find(contacts, {id: contactId});
 
@@ -15,5 +18,7 @@ const PersonalPage = ({contactId, contacts}) => {
     </div>
     )
   }
+
+
   
-export default PersonalPage;
+export default PersonalPage

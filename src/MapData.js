@@ -1,9 +1,10 @@
 import {Link} from 'react-router-dom';
-import data from './data';
+// import data from './data';
 import React from 'react';
 
 
-const MapData = (contact) => {
+const MapData = (props) => {
+
   
   return (
     <div>
@@ -17,7 +18,7 @@ const MapData = (contact) => {
             <th>Phone Number</th>
           </tr>
         </thead>
-        {data.contacts.map(contact => (
+        {props.contacts.map(contact => (
           <tbody key={contact.alias}>
             <tr key={contact.id}>
               <td key={`${contact.image_url}`}>

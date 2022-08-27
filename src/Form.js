@@ -14,7 +14,7 @@ const Form = (props) => {
       phone_number
     })
 
-    props.history.push('data /')
+    props.history.push('/')
   }
   
   return (
