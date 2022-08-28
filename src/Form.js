@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+
 const Form = (props) => {
   const [image_url, setImage_url] = useState('')
   const [name, setName] = useState('')
@@ -7,14 +8,13 @@ const Form = (props) => {
   const [phone_number, setPhone_number] = useState('')
 
   const contactNew = () => {
+    
     props.AddContact({
       image_url,
       name,
       email,
       phone_number
-    })
-
-    props.history.push('/')
+    })    
   }
   
   return (

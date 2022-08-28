@@ -5,7 +5,6 @@ import {Link} from 'react-router-dom';
 const PersonalPage = ({contactId, contacts}) => {
   const contact = _.find(contacts, {id: contactId});
  
-
   return (
     <div>
       
