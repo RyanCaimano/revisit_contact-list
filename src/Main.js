@@ -12,19 +12,19 @@ const Main = () => {
   <main>
     <Switch>
 
-      <Route exact path="/" render= {() => 
+      <Route exact path='/' render= {() => 
         <Home contacts={contacts} />    
       } />
 
-      <Route exact path ="/contacts" render= {(routerProps) => 
+      <Route exact path ='/contacts' render= {(routerProps) => 
         <Home history={routerProps.history} contacts={contacts} />
       } />
 
-      <Route exact path="/contacts/new" render={ (routerProps) =>
+      <Route exact path='/contacts/new' render={ (routerProps) =>
         <Form history={routerProps.history} AddContact={AddContact} />
 
       } />
-      <Route path="/contacts/:contactId" render= { (routerProps) =>
+      <Route path='/contacts/:contactId' render= { (routerProps) =>
       <PersonalPage contactId={parseInt(routerProps.match.params.contactId)} contacts={contacts} /> 
       } />
 
