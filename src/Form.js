@@ -9,12 +9,14 @@ const Form = (props) => {
 
   const contactNew = () => {
     
+    
     props.AddContact({
       image_url,
       name,
       email,
       phone_number
-    })    
+    })   
+    
   }
   
   return (
@@ -51,7 +53,7 @@ const Form = (props) => {
 
       <br/>
 
-      <button className="btn btn-primary" onClick={contactNew}>Submit</button>
+      <button type="submit" className="btn btn-primary" onClick={contactNew}>Submit</button>
 
       </form>
     </div>

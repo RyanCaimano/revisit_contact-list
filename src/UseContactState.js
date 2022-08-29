@@ -1,7 +1,6 @@
 import data from './data'
 import { useState } from 'react'
 
-
 const useContactState = () => {
   const [contacts, setContacts] = useState(data.contacts)
 

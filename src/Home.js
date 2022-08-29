@@ -8,7 +8,7 @@ const Home = ({contacts}) => {
   return (
     <div>
       <MapData contacts={contacts}/>
-      <button className="btn btn-primary" onClick={HandleAddContact}>Add Contact</button> 
+      <button type="button" className="btn btn-primary" onClick={HandleAddContact}>Add Contact</button> 
     </div>
   )
 }

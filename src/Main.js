@@ -2,13 +2,13 @@ import { Switch, Route} from 'react-router-dom';
 import Home from './Home';
 import Form from './Form';
 import PersonalPage from './PersonalPage';
-import useContactState from './UseContactState';
+import useContactState from './useContactState';
 
 const Main = () => {
   const { contacts, AddContact } = useContactState();
   
-  
   return (
+    
   <main>
     <Switch>
 

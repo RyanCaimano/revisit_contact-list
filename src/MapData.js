@@ -2,7 +2,6 @@ import {Link} from 'react-router-dom';
 // import data from './data';
 import React from 'react';
 
-
 const MapData = (props) => {
 
   return (
