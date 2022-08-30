@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import UniqueId from './UniqueId'
+
 
 
 const Form = (props) => {
@@ -6,15 +8,21 @@ const Form = (props) => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone_number, setPhone_number] = useState('')
+  const [id, setId] = useState('')
 
+  
   const contactNew = () => {
+    
+    const id = setId(UniqueId());
+
     
     props.AddContact({
       image_url,
       name,
       email,
-      phone_number
-    })   
+      phone_number,
+      id
+    })  
     
     props.history.push('/contacts');
     
