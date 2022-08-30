@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import UniqueId from './UniqueId'
-
 
 
 const Form = (props) => {
@@ -8,12 +6,16 @@ const Form = (props) => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone_number, setPhone_number] = useState('')
-  const [id, setId] = useState('')
+  const uniqueId = Math.round(Math.random() * 100000000);
 
   
+
+  const [id] = useState(uniqueId)
+ 
   const contactNew = () => {
     
-    const id = setId(UniqueId());
+    
+    
 
     
     props.AddContact({
