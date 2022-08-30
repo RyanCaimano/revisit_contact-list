@@ -3,7 +3,6 @@ import MapData from "./MapData";
 import "./index.css";
 import HandleAddContact from "./HandleAddContact";
 
-
 const Home = ({contacts}) => {
   
   return (

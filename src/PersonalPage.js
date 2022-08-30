@@ -14,7 +14,7 @@ const PersonalPage = ({contactId, contacts}) => {
       <h2>{contact.phone_number}</h2>
       <br></br>
       <h2><img src={contact.image_url} alt="here is your friend's portrait"/></h2>
-      <Link className="back" to ="/">Back</Link>
+      <Link className="back" to ="/contacts">Back</Link>
     </div>
     )
   }

@@ -3,7 +3,6 @@ import React from 'react';
 
 const MapData = (props) => {
   
-  
   return (
     props.contacts.map(contact => (
       <tbody key={contact.alias}>
