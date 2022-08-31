@@ -23,7 +23,6 @@ const Form = (props) => {
       alert('Please enter a valid name using a space between first and last name')
     } else {
 
-
     props.AddContact({
       image_url,
       name,
