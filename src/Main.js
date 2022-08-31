@@ -3,6 +3,7 @@ import Home from './Home';
 import Form from './Form';
 import PersonalPage from './PersonalPage';
 import useContactState from './useContactState';
+import NotFound from './NotFound';
 
 const Main = () => {
   const { contacts, AddContact } = useContactState();
@@ -24,9 +25,11 @@ const Main = () => {
         <Form history={routerProps.history} AddContact={AddContact} />
 
       } />
-      <Route path='/contacts/:contactId' render= { (routerProps) =>
-      <PersonalPage contactId={parseInt(routerProps.match.params.contactId)} contacts={contacts} /> 
+      <Route exact path='/contacts/:contactId' render= { (routerProps) =>
+      <PersonalPage contactId={parseInt(routerProps.match.params.contactId)} contacts={contacts} />
+      
       } />
+      <Route component= {NotFound} />
 
     </Switch>
   </main>
